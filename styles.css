@@ -1,20 +1,47 @@
 #logoBar{
   width: 30vw;
   height: 100vh;
+  color:purple;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 #siteLogo{
   width: 100%;
 }
 body {
   display: flex;
+  background-color:aqua;
 }
 #staffGallery{
   width: 70vw;
-  display: inherit;
-
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 .galleryImage{
   width: 100%;
   height: auto;
   height: 300px;
 }
+
+.card{
+  background-color:green;
+  height: 400px;
+}
+
+p{
+ text-align: center;
+ color: white;
+ font-size: 30px;
+}
+
+@media (max-width: 600px) {
+  body{
+    display: flex;
+    flex-direction: column;
+  }
+  #logoBar{
+    height: auto;
+    width: 100vw;
+  }
+}
+  
